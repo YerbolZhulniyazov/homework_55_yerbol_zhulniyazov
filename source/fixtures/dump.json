@@ -1,0 +1,67 @@
+[
+{
+  "model": "webapp.todo",
+  "pk": 1,
+  "fields": {
+    "status": "NEW",
+    "title": "Парикмахерская",
+    "description": "сходить подстричься",
+    "detailed_description": "Сходить в парикмахерскую возле дома в пятницу вечером",
+    "completion_date": "2023-02-24",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 2,
+  "fields": {
+    "status": "NEW",
+    "title": "Продукты",
+    "description": "Сходить в супермаркет, купить продукты",
+    "detailed_description": "Составить список, сходить в Магнум и купить все по списку",
+    "completion_date": "2023-02-25",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 3,
+  "fields": {
+    "status": "IN_PROGRESS",
+    "title": "Контрольная",
+    "description": "Подготовиться к контрольной",
+    "detailed_description": "Повторить все пройденнные материалы и подготовиться к контрольной",
+    "completion_date": "2023-02-24",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 4,
+  "fields": {
+    "status": "COMPLETED",
+    "title": "Домашнее задание",
+    "description": "Сделать домашнее задание",
+    "detailed_description": "Пересмотреть последнее занятие и сделать домашнее задание",
+    "completion_date": "2023-02-24",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "webapp.todo",
+  "pk": 6,
+  "fields": {
+    "status": "COMPLETED",
+    "title": "Стирка",
+    "description": "Постирать одежду",
+    "detailed_description": "Купить порошок и постирать",
+    "completion_date": "2023-02-23",
+    "is_deleted": true,
+    "deleted_at": "2023-02-24T10:55:06.789Z"
+  }
+}
+]
