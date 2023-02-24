@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Article confirm delete{% endblock %}
+{% block menu %}
+    <li><a href="{% url 'index' %}"> Home</a></li>
+    <li><a href="{% url 'add_task' %}">Добавить Задачу</a></li>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1>Вы действительно хотите удалить данную задачу?:</h1>
+        <h2>Задача: {{ task.title }}</h2>
+        <p>Описание: {{ task.description }}</p>
+        <p>Статус: {{ task.status }}</p>
+            <form action="{% url 'confirm_delete' task.pk %}" method="post">
+                {% csrf_token %}
+                <p><input type="submit" value="Удалить"></p>
+                <p><a href="{% url 'index' %}">Отмена</a></p>
+            </form>
+    </div>
+{% endblock %}

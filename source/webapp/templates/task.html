@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Task{% endblock %}
+{% block menu %}
+    <a href="/">Home</a>
+    <a href="{% url 'add_task' %}">Добавить задачу</a>
+{% endblock %}
+{% block content %}
+    <div>
+        <h1>Информация о задаче:</h1>
+        <h2>Задача: {{ task.title }}</h2>
+        <h2>Описание задачи: {{ task.description }}</h2>
+        <h2>Побдробное писание задачи: {{ task.detailed_description }}</h2>
+        <h2>Статус задачи: {{ task.status }}</h2>
+        <h2>Дата выполнения: {{ task.completion_date }}</h2>
+    </div>
+{% endblock %}

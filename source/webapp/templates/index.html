@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block menu %}
+    <a href="{% url 'add_task' %}">Добавить задачу</a>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Задачи</h1>
+    {% for task in tasks %}
+        <h2>Задача: {{ task.title }}</h2>
+        <h2>Статус задачи: {{ task.status }}</h2>
+        <p><a href={% url 'detail_task' task.pk %}>Подробнее...</a></p>
+        <a href="task/{{ task.pk }}/update/"><button type="submit">Редактировать</button></a>
+        <a href="task/{{ task.pk }}/delete/"><button type="submit">Удалить</button></a>
+        <hr>
+    {% endfor %}
+</div>
+{% endblock %}
